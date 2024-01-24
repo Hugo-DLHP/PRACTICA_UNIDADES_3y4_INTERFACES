@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto-Thin';
     src: url('./Roboto/Roboto-Thin.ttf');
 }
 
 * {
-    font-family: Roboto;
+    font-family: Roboto-Thin;
 }
 
 .caja{
@@ -20,18 +20,23 @@
 
 #c2 {
     height: 40vh;
-    width: 50%;
-    display:flex;
-    flex-direction: column;
 }
 
 #c3 {
     height: 30vh;
 }
 
+#c2, #c3 {    
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+}
+
 #c4 {
     height: 13vh;
     background-color: #EA692F;
+    display: flex;
+    align-items: center;
 }
 
 #fila {
@@ -54,4 +59,49 @@
     margin: 2% auto;
     width: 55%;
     border: 2px lightskyblue solid;
+    padding: 1px;
+}
+
+h3, h6 {
+    margin: 0;
+}
+
+.texto {
+    width: 20%;
+    border: none;
+}
+
+.texto p {
+    margin-top: 0;
+    font-size: 10px;
+}
+
+.texto #titulo {    
+    background-color: white;
+}
+
+.lista #titulo {
+    background-color: white;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+.lista-horizontal {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.lista-horizontal li {
+    margin-right: 1vw; 
+}
+
+.lista-horizontal li:first-child {
+    margin-left: 1vw; 
+}
+
+svg {
+    background-color: white;
+    border-radius: 50%;
+    border: black 2px solid;
 }
