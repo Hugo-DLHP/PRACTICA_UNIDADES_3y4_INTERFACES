@@ -46,6 +46,15 @@
     flex-direction: row;
 }
 
+#fila .caja#c3 video {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    /* Esto garantiza que la altura se ajuste automáticamente manteniendo la proporción */
+    display: block;
+    /* Asegura que el elemento de video se comporte como un bloque */
+}
+
 #columna {
     display: flex;
     flex-direction: column;
@@ -121,6 +130,7 @@ svg {
     color: whitesmoke;
     position: relative;
     text-decoration: none;
+    margin-left: 2vw;
 }
 
 #linksNav::before {
@@ -140,4 +150,98 @@ svg {
 #linksNav:hover::before {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+#audio-container {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#volume-slider {
+    width: 100px;
+}
+
+#volume-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#volume-button svg {
+    fill: currentColor;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#volume-control {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #fila .caja#c1 {
+        height: auto;
+    }
+
+    #fila .caja#c1 ul {
+        font-size: 12px;
+    }
+
+    #fila .caja#c1 li {
+        margin-right: 1vw;
+    }
+
+    #fila .caja#c2,
+    #fila .caja#c3 {
+        width: 100%;
+    }
+
+    #fila .caja#c2,
+    #fila .caja#c3 video {
+        width: 100%;
+        height: auto;
+    }
+
+    #titulo h3,
+    #titulo h6 {
+        font-size: 14px;
+    }
+
+    .texto p {
+        font-size: 10px;
+    }
+
+    #volume-control {
+        margin-left: 2vw;
+    }
+
+    #fila .caja#c4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #fila .caja#c4>div {
+        width: 100%;
+        margin: 2vh 0;
+    }
+
+    #fila .caja#c4 .lista {
+        display: block;
+        text-align: center;
+    }
+
+    #fila .caja#c4 .lista ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #fila .caja#c4 .lista-horizontal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #fila .caja#c4 .lista-horizontal li {
+        margin: 0 1vw;
+    }
 }
