@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const volumeButtonIcon = document.getElementById('volume-button-icon');
 
 
-    //alert('¡La música de fondo comenzará en 5 segundos! Si no deseas escucharla, puedes ajustar el volumen con el controlador en la esquina superior izquierda.');
-    //
-    //setTimeout(function () {
-    //    audioPlayer.play();
-    //}, 5000); 
+    alert('¡La música de fondo comenzará en 5 segundos! Si no deseas escucharla, puedes ajustar el volumen con el controlador en la esquina superior izquierda.');
+    
+    setTimeout(function () {
+        audioPlayer.play();
+    }, 5000); 
     
 
     volumeControl.style.display = 'none';
